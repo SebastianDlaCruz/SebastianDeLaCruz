@@ -1,0 +1,18 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-top {
+  margin-block-start: 1rem;
+  padding-block-start: 4rem;
+}
+
+.flex-flow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 12%;
+} 

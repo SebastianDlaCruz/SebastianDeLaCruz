@@ -1,0 +1,40 @@
+*,::after,::before{
+  box-sizing: border-box;
+  font-family: var(--font-secundario);
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body{
+  text-align: center;
+  color: var(--color-blanco);
+  background-color: var(--color-negro);
+  overflow-x: hidden;
+}
+
+button{
+  border: none;
+  background: none;
+}
+
+ul,li{
+  padding: 0;
+  list-style-type: none;
+}
+
+menu{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}

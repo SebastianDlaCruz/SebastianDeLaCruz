@@ -1,0 +1,313 @@
+.hero-header{
+  position: relative;
+  padding: 2em;
+
+  &__img{
+    position: absolute;
+    inset: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  &-container{
+    min-block-size: 809px;
+    inline-size: var(--inline-size-hero);
+    margin-top: 23px;
+  }
+
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  block-size: 64px;
+  inline-size: var(--inline-size-hero);
+  padding: 12px;
+  border-radius: var(--border-radius);
+  background-color: var(--color-hero-header);
+  z-index: 2;
+}
+
+.menu{
+  position: fixed;
+  inset: 0;
+  flex-direction: column;
+  gap: 45px;
+  block-size: 100vh;
+  inline-size: 100%;
+  background-color: var(--color-negro);
+  transform: translateX(100%);
+  transition: transform var(--transition-1);
+  z-index: 1;
+
+  &__link{
+    font-size: var(--step-6);
+    color: var(--color-text-header);
+    transition: color var(--transition-1);
+
+    &:hover{
+      color: var(--color-blanco);
+    }
+  }
+
+  &__active{
+    transform: translateX(0%);
+  }
+}
+
+.button-hamburger{
+  padding: 1.2em;
+  background-image: url('/assets/icons/hamburger.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.astronauta{
+  transform: translate(1%, -4%);
+  animation: astronauta 3s cubic-bezier(0.06, -0.04, 0.92, 1.01) infinite;
+}
+
+
+
+.title{
+  font-size: var(--step-0);
+  font-weight: 800;
+  font-family: var(--font-principal);
+}
+
+
+.paragraph{
+  font-size: var(--step-4)
+}
+
+
+.section-sobre-mi{
+  position: relative;
+
+  &__container{
+    gap: 21px;
+    block-size: 1205px;
+  }  
+
+  &__article{
+    position: relative;
+    margin-top: 200px;
+    block-size: 400px;
+    z-index: 1;
+
+    & header h3{
+    font-size: var(--step-4);
+    }
+  }
+
+  &__img--banner-1{
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-start: 10%;
+    z-index: -1;
+  }
+  
+  &__img--banner-2{
+    position: absolute;
+    inset-block-end: 0%;
+    inset-inline: 0;
+  }
+  
+
+  &__paragraph{
+    block-size: 477px;
+    inline-size: 607px;
+    padding: 0 21px;
+    word-wrap: break-word;
+    line-height: 35px;
+    font-size: var(--step-5);
+  }
+}
+
+.button-cv{
+  display: block;
+  padding: .6em;
+  border: 5px solid #DA65D7;
+  border-radius: var(--border-radius);
+  font-size: var(--step-3);
+  font-weight: 800;
+  text-align: center;
+  background-image: var(--color-rose) ;
+  background-clip: text;
+  color: transparent;
+}
+
+.card{
+  justify-content: center;
+  min-block-size: 600px;
+  inline-size: 393px;
+  background-color: var(--color-card);
+  border-radius: var(--border-radius);
+
+  & header img{
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+  }
+  
+  & div{
+    padding: 0 40px;
+
+    h3{
+      font-size: var(--step-3);
+    }
+    
+    p{
+      word-wrap: break-word;
+      font-size: var(--step-7);
+    }
+  }
+
+  & footer {
+    margin-top: 12px;
+
+    & ul li img{
+      block-size: 70px;
+    }
+  }
+}
+
+.section-proyectos{
+  gap: 30px;
+  padding: 21px;
+}
+
+.links-proyectos{
+  padding: .4em 1em;
+  border-radius: 4px;
+  color: var(--color-blanco);
+  background-image: var(--color-rose);  
+}
+
+.footer-pages{
+  block-size: 312px;
+  padding: 0 34px;
+
+  &__copyright{
+  font-weight: 400;
+    font-size: var(--step-6);
+    color: #ffffff8a;
+  }
+
+  & ul{
+    gap: 31px;
+    inline-size: 400px;
+
+    & li a{
+      display: inline-block;
+      inline-size: 20px;     
+      padding: 1em;
+    }
+  }
+
+}
+
+.bn-top-home{
+  position: fixed;
+  inset-block-end: 10%;
+  inset-inline: 78%;
+  display: inline-block;
+  inline-size: 60px;
+  background-image: url('/assets/icons/top.svg');
+  z-index: 4;
+}
+
+.section-recomendacion{
+  padding: 60px;
+  background-color: #0C0717;
+}
+
+.card-recomendacion{
+  gap: 43px;
+
+  &__article{
+    inline-size: 700px;
+
+    &__h3{
+      font-size: var(--step-4);
+    }
+
+
+    &__p{ 
+      font-size: var(--step-7);
+
+    }
+  }
+}
+
+.g-mail{
+  background-image: url('/assets/icons/gmail.svg');
+}
+
+.git-hub{
+  background-image: url('/assets/icons/Shape.svg');
+}
+
+.linkind{
+  background-image: url('/assets/icons/linkedin.svg');
+}
+
+@keyframes  astronauta {
+  50%{
+    transform: translate(10%, 13%);
+  }
+}
+
+
+@media screen and (width >= 920px) {
+    .menu{
+      position: relative;
+      flex-direction: row;
+      gap: 40px;
+      block-size: 61px;
+      inline-size: 625px;
+      background: none;
+      transform: translate(0);
+      transition: none;
+    } 
+
+    .button-hamburger{
+      opacity: 0;
+      visibility: 0;
+    }
+
+    .title{
+      text-align: left;
+    }
+
+    .section-sobre-mi{
+      &__paragraph{
+        text-align: left;
+      }
+
+      &__container{
+        gap: 31em;
+        block-size: 600px;
+        
+        img{
+          position: absolute;
+          inset-block-start: 29%;
+          inset-inline: 53rem;
+          transform: translateY(12%);
+          z-index: 2;
+        }
+      } 
+
+    }
+
+    .card-recomendacion{
+      text-align: left;
+    }
+
+    .footer-pages{
+        justify-content: space-between;
+    }
+}
