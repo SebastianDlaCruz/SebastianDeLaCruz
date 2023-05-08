@@ -100,8 +100,8 @@
 
   &__article{
     position: relative;
-    margin-top: 200px;
     block-size: 400px;
+    margin: 27px 0;
     z-index: 1;
 
     & header h3{
@@ -120,6 +120,8 @@
     position: absolute;
     inset-block-end: 0%;
     inset-inline: 0;
+    max-block-size: 800px;
+    inline-size: 100%;
   }
   
 
@@ -307,12 +309,12 @@
 
       &__container{
         gap: 31em;
-        block-size: 600px;
+        min-block-size: 600px;
         
         img{
           position: absolute;
           inset-block-start: 29%;
-          inset-inline: 53rem;
+          inset-inline: 64%;
           transform: translateY(12%);
           z-index: 2;
         }

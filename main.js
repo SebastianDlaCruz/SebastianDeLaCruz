@@ -14,7 +14,6 @@ doc.addEventListener('DOMContentLoaded', () => {
     '.glide__arrow--right',
     '#carrusel-1 .ul__li');
 
-  animationMenu(doc, 'section');
 
 });
 
