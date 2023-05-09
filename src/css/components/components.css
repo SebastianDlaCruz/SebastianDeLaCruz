@@ -90,7 +90,7 @@
 
   &__container{
     gap: 21px;
-    block-size: 1220px;
+  min-block-size: 1220px;
 
     & img{
       transform: translateY(21%);
@@ -100,8 +100,8 @@
 
   &__article{
     position: relative;
-    block-size: 400px;
-    margin: 27px 0;
+    min-block-size: 493px;
+    margin: 12px 0;
     z-index: 1;
 
     & header h3{
@@ -118,10 +118,12 @@
   
   &__img--banner-2{
     position: absolute;
+    inset-block-start: 0%;
     inset-block-end: 0%;
     inset-inline: 0;
-    max-block-size: 800px;
+    max-block-size: 587px;
     inline-size: 100%;
+    z-index: -1;
   }
   
 
@@ -313,8 +315,8 @@
         
         img{
           position: absolute;
-          inset-block-start: 29%;
-          inset-inline: 64%;
+          inset-block-start: 28%;
+          inset-inline: 59%;
           transform: translateY(12%);
           z-index: 2;
         }
