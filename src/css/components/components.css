@@ -155,7 +155,7 @@
   flex-direction: column;
   justify-content: center;
   gap : 30px;
-  block-size: 300px;
+  min-block-size: 400px;
 
   & figcaption{
       font-size: var(--step-5);
