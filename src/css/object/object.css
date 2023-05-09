@@ -75,6 +75,10 @@
   inline-size: var(--size);
 }
 
+.margin-top-32{
+  margin-top: 32px;
+}
+
 @media screen and (width >= 920px) {
   .header-subtitle{
     line-height: 30px;
