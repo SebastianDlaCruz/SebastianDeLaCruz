@@ -133,16 +133,18 @@
     padding: 0 21px;
     word-wrap: break-word;
     line-height: 35px;
-    font-size: var(--step-5);
+    font-size: var(--step-6);
   }
 }
 
 .button-cv{
   display: block;
-  padding: .6em;
+  width: 400px;
+  margin: 0 auto;
+  padding: .6em ;
   border: 5px solid #DA65D7;
   border-radius: var(--border-radius);
-  font-size: var(--step-3);
+  font-size: var(--step-4);
   font-weight: 800;
   text-align: center;
   background-image: var(--color-rose) ;
@@ -155,7 +157,7 @@
   flex-direction: column;
   justify-content: center;
   gap : 30px;
-  min-block-size: 400px;
+  max-block-size: 199px;
 
   & figcaption{
       font-size: var(--step-5);

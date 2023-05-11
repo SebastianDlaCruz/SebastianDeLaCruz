@@ -79,6 +79,26 @@
   margin-top: 32px;
 }
 
+.hover-card{
+  transform: scale(100%);
+  transition: transform var(--transition-1);
+
+  &:hover{
+    transform: scale(105%);
+  }
+}
+
+.hover-button-cv{
+  color: #741e718c;
+  background-color: transparent;
+  transition: color var(--transition-1) ;
+
+  &:hover{
+    color: var(--white);
+
+  }
+}
+
 @media screen and (width >= 920px) {
   .header-subtitle{
     line-height: 30px;
